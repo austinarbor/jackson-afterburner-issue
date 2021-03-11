@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version '5.3.0'
+}
+
+group 'dev.aga'
+version '1.0.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "com.fasterxml.jackson.core:jackson-databind:2.12.2"
+    implementation "com.fasterxml.jackson.module:jackson-module-afterburner:2.12.2"
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
